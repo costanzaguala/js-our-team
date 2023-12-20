@@ -42,3 +42,13 @@ teamMembers.forEach(member => {
     memberInfo.innerHTML = `<p>Name: ${member.name}</p><p>Role: ${member.role}</p><img src="${member.image}" alt="${member.name}">`;
     teamContainer.appendChild(memberInfo);
 });
+
+// IN PIU
+document.getElementById('prev').addEventListener('click', function () {
+    document.getElementById('team-container').scrollLeft -= 300;
+});
+
+document.getElementById('next').addEventListener('click', function () {
+    document.getElementById('team-container').scrollLeft += 300;
+});
+
